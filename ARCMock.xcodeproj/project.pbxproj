@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6623FEAE14B26DAC009E65E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623FEAD14B26DAC009E65E6 /* UIKit.framework */; };
+		6623FEB014B26DAC009E65E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623FEAF14B26DAC009E65E6 /* Foundation.framework */; };
+		6623FEB214B26DAC009E65E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623FEB114B26DAC009E65E6 /* CoreGraphics.framework */; };
+		6623FEB814B26DAC009E65E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6623FEB614B26DAC009E65E6 /* InfoPlist.strings */; };
+		6623FEBA14B26DAC009E65E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6623FEB914B26DAC009E65E6 /* main.m */; };
+		6623FEBE14B26DAC009E65E6 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6623FEBD14B26DAC009E65E6 /* AMAppDelegate.m */; };
+		6623FEC614B26DAC009E65E6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623FEC514B26DAC009E65E6 /* SenTestingKit.framework */; };
+		6623FEC714B26DAC009E65E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623FEAD14B26DAC009E65E6 /* UIKit.framework */; };
+		6623FEC814B26DAC009E65E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623FEAF14B26DAC009E65E6 /* Foundation.framework */; };
+		6623FED014B26DAC009E65E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6623FECE14B26DAC009E65E6 /* InfoPlist.strings */; };
+		6623FED314B26DAC009E65E6 /* ARCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6623FED214B26DAC009E65E6 /* ARCMockTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6623FEC914B26DAC009E65E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6623FEA014B26DAC009E65E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6623FEA814B26DAC009E65E6;
+			remoteInfo = ARCMock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6623FEA914B26DAC009E65E6 /* ARCMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6623FEAD14B26DAC009E65E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6623FEAF14B26DAC009E65E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6623FEB114B26DAC009E65E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6623FEB514B26DAC009E65E6 /* ARCMock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARCMock-Info.plist"; sourceTree = "<group>"; };
+		6623FEB714B26DAC009E65E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6623FEB914B26DAC009E65E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6623FEBB14B26DAC009E65E6 /* ARCMock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARCMock-Prefix.pch"; sourceTree = "<group>"; };
+		6623FEBC14B26DAC009E65E6 /* AMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
+		6623FEBD14B26DAC009E65E6 /* AMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
+		6623FEC414B26DAC009E65E6 /* ARCMockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCMockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6623FEC514B26DAC009E65E6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6623FECD14B26DAC009E65E6 /* ARCMockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARCMockTests-Info.plist"; sourceTree = "<group>"; };
+		6623FECF14B26DAC009E65E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6623FED114B26DAC009E65E6 /* ARCMockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCMockTests.h; sourceTree = "<group>"; };
+		6623FED214B26DAC009E65E6 /* ARCMockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCMockTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6623FEA614B26DAC009E65E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6623FEAE14B26DAC009E65E6 /* UIKit.framework in Frameworks */,
+				6623FEB014B26DAC009E65E6 /* Foundation.framework in Frameworks */,
+				6623FEB214B26DAC009E65E6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6623FEC014B26DAC009E65E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6623FEC614B26DAC009E65E6 /* SenTestingKit.framework in Frameworks */,
+				6623FEC714B26DAC009E65E6 /* UIKit.framework in Frameworks */,
+				6623FEC814B26DAC009E65E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6623FE9E14B26DAC009E65E6 = {
+			isa = PBXGroup;
+			children = (
+				6623FEB314B26DAC009E65E6 /* ARCMock */,
+				6623FECB14B26DAC009E65E6 /* ARCMockTests */,
+				6623FEAC14B26DAC009E65E6 /* Frameworks */,
+				6623FEAA14B26DAC009E65E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6623FEAA14B26DAC009E65E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6623FEA914B26DAC009E65E6 /* ARCMock.app */,
+				6623FEC414B26DAC009E65E6 /* ARCMockTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6623FEAC14B26DAC009E65E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6623FEAD14B26DAC009E65E6 /* UIKit.framework */,
+				6623FEAF14B26DAC009E65E6 /* Foundation.framework */,
+				6623FEB114B26DAC009E65E6 /* CoreGraphics.framework */,
+				6623FEC514B26DAC009E65E6 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6623FEB314B26DAC009E65E6 /* ARCMock */ = {
+			isa = PBXGroup;
+			children = (
+				6623FEBC14B26DAC009E65E6 /* AMAppDelegate.h */,
+				6623FEBD14B26DAC009E65E6 /* AMAppDelegate.m */,
+				6623FEB414B26DAC009E65E6 /* Supporting Files */,
+			);
+			path = ARCMock;
+			sourceTree = "<group>";
+		};
+		6623FEB414B26DAC009E65E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6623FEB514B26DAC009E65E6 /* ARCMock-Info.plist */,
+				6623FEB614B26DAC009E65E6 /* InfoPlist.strings */,
+				6623FEB914B26DAC009E65E6 /* main.m */,
+				6623FEBB14B26DAC009E65E6 /* ARCMock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6623FECB14B26DAC009E65E6 /* ARCMockTests */ = {
+			isa = PBXGroup;
+			children = (
+				6623FED114B26DAC009E65E6 /* ARCMockTests.h */,
+				6623FED214B26DAC009E65E6 /* ARCMockTests.m */,
+				6623FECC14B26DAC009E65E6 /* Supporting Files */,
+			);
+			path = ARCMockTests;
+			sourceTree = "<group>";
+		};
+		6623FECC14B26DAC009E65E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6623FECD14B26DAC009E65E6 /* ARCMockTests-Info.plist */,
+				6623FECE14B26DAC009E65E6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6623FEA814B26DAC009E65E6 /* ARCMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6623FED614B26DAC009E65E6 /* Build configuration list for PBXNativeTarget "ARCMock" */;
+			buildPhases = (
+				6623FEA514B26DAC009E65E6 /* Sources */,
+				6623FEA614B26DAC009E65E6 /* Frameworks */,
+				6623FEA714B26DAC009E65E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARCMock;
+			productName = ARCMock;
+			productReference = 6623FEA914B26DAC009E65E6 /* ARCMock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6623FEC314B26DAC009E65E6 /* ARCMockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6623FED914B26DAC009E65E6 /* Build configuration list for PBXNativeTarget "ARCMockTests" */;
+			buildPhases = (
+				6623FEBF14B26DAC009E65E6 /* Sources */,
+				6623FEC014B26DAC009E65E6 /* Frameworks */,
+				6623FEC114B26DAC009E65E6 /* Resources */,
+				6623FEC214B26DAC009E65E6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6623FECA14B26DAC009E65E6 /* PBXTargetDependency */,
+			);
+			name = ARCMockTests;
+			productName = ARCMockTests;
+			productReference = 6623FEC414B26DAC009E65E6 /* ARCMockTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6623FEA014B26DAC009E65E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Cerner Corporation";
+			};
+			buildConfigurationList = 6623FEA314B26DAC009E65E6 /* Build configuration list for PBXProject "ARCMock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6623FE9E14B26DAC009E65E6;
+			productRefGroup = 6623FEAA14B26DAC009E65E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6623FEA814B26DAC009E65E6 /* ARCMock */,
+				6623FEC314B26DAC009E65E6 /* ARCMockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6623FEA714B26DAC009E65E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6623FEB814B26DAC009E65E6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6623FEC114B26DAC009E65E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6623FED014B26DAC009E65E6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6623FEC214B26DAC009E65E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6623FEA514B26DAC009E65E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6623FEBA14B26DAC009E65E6 /* main.m in Sources */,
+				6623FEBE14B26DAC009E65E6 /* AMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6623FEBF14B26DAC009E65E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6623FED314B26DAC009E65E6 /* ARCMockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6623FECA14B26DAC009E65E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6623FEA814B26DAC009E65E6 /* ARCMock */;
+			targetProxy = 6623FEC914B26DAC009E65E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6623FEB614B26DAC009E65E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6623FEB714B26DAC009E65E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6623FECE14B26DAC009E65E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6623FECF14B26DAC009E65E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6623FED414B26DAC009E65E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6623FED514B26DAC009E65E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6623FED714B26DAC009E65E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMock/ARCMock-Prefix.pch";
+				INFOPLIST_FILE = "ARCMock/ARCMock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6623FED814B26DAC009E65E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMock/ARCMock-Prefix.pch";
+				INFOPLIST_FILE = "ARCMock/ARCMock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6623FEDA14B26DAC009E65E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCMock.app/ARCMock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMock/ARCMock-Prefix.pch";
+				INFOPLIST_FILE = "ARCMockTests/ARCMockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6623FEDB14B26DAC009E65E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCMock.app/ARCMock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCMock/ARCMock-Prefix.pch";
+				INFOPLIST_FILE = "ARCMockTests/ARCMockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6623FEA314B26DAC009E65E6 /* Build configuration list for PBXProject "ARCMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6623FED414B26DAC009E65E6 /* Debug */,
+				6623FED514B26DAC009E65E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6623FED614B26DAC009E65E6 /* Build configuration list for PBXNativeTarget "ARCMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6623FED714B26DAC009E65E6 /* Debug */,
+				6623FED814B26DAC009E65E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6623FED914B26DAC009E65E6 /* Build configuration list for PBXNativeTarget "ARCMockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6623FEDA14B26DAC009E65E6 /* Debug */,
+				6623FEDB14B26DAC009E65E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6623FEA014B26DAC009E65E6 /* Project object */;
+}
