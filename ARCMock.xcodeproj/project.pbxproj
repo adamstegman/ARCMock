@@ -18,6 +18,8 @@
 		6623FEC814B26DAC009E65E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623FEAF14B26DAC009E65E6 /* Foundation.framework */; };
 		6623FED014B26DAC009E65E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6623FECE14B26DAC009E65E6 /* InfoPlist.strings */; };
 		6623FED314B26DAC009E65E6 /* ARCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6623FED214B26DAC009E65E6 /* ARCMockTests.m */; };
+		6623FEDE14B2717C009E65E6 /* AMTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 6623FEDD14B2717C009E65E6 /* AMTester.m */; };
+		6623FEE214B271EE009E65E6 /* AMTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6623FEE114B271EE009E65E6 /* AMTesterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,11 @@
 		6623FECF14B26DAC009E65E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6623FED114B26DAC009E65E6 /* ARCMockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCMockTests.h; sourceTree = "<group>"; };
 		6623FED214B26DAC009E65E6 /* ARCMockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCMockTests.m; sourceTree = "<group>"; };
+		6623FEDC14B2717C009E65E6 /* AMTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTester.h; sourceTree = "<group>"; };
+		6623FEDD14B2717C009E65E6 /* AMTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTester.m; sourceTree = "<group>"; };
+		6623FEDF14B27199009E65E6 /* AMDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDelegateProtocol.h; sourceTree = "<group>"; };
+		6623FEE014B271EE009E65E6 /* AMTesterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTesterTests.h; sourceTree = "<group>"; };
+		6623FEE114B271EE009E65E6 /* AMTesterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTesterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,9 @@
 				6623FEBC14B26DAC009E65E6 /* AMAppDelegate.h */,
 				6623FEBD14B26DAC009E65E6 /* AMAppDelegate.m */,
 				6623FEB414B26DAC009E65E6 /* Supporting Files */,
+				6623FEDC14B2717C009E65E6 /* AMTester.h */,
+				6623FEDD14B2717C009E65E6 /* AMTester.m */,
+				6623FEDF14B27199009E65E6 /* AMDelegateProtocol.h */,
 			);
 			path = ARCMock;
 			sourceTree = "<group>";
@@ -130,6 +140,8 @@
 				6623FED114B26DAC009E65E6 /* ARCMockTests.h */,
 				6623FED214B26DAC009E65E6 /* ARCMockTests.m */,
 				6623FECC14B26DAC009E65E6 /* Supporting Files */,
+				6623FEE014B271EE009E65E6 /* AMTesterTests.h */,
+				6623FEE114B271EE009E65E6 /* AMTesterTests.m */,
 			);
 			path = ARCMockTests;
 			sourceTree = "<group>";
@@ -251,6 +263,7 @@
 			files = (
 				6623FEBA14B26DAC009E65E6 /* main.m in Sources */,
 				6623FEBE14B26DAC009E65E6 /* AMAppDelegate.m in Sources */,
+				6623FEDE14B2717C009E65E6 /* AMTester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6623FED314B26DAC009E65E6 /* ARCMockTests.m in Sources */,
+				6623FEE214B271EE009E65E6 /* AMTesterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +378,23 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCMock.app/ARCMock";
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/ARCMockTests",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ARCMock/ARCMock-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/adam/repos/ARCMock/ARCMockTests/Libraries/Headers;
 				INFOPLIST_FILE = "ARCMockTests/ARCMockTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/adam/repos/ARCMock/ARCMockTests,
+					/Users/adam/repos/ARCMock/ARCMockTests/Libraries,
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(PROJECT_DIR)/ARCMockTests/Libraries/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -381,12 +406,23 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCMock.app/ARCMock";
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/ARCMockTests",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ARCMock/ARCMock-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/adam/repos/ARCMock/ARCMockTests/Libraries/Headers;
 				INFOPLIST_FILE = "ARCMockTests/ARCMockTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/adam/repos/ARCMock/ARCMockTests,
+					/Users/adam/repos/ARCMock/ARCMockTests/Libraries,
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(PROJECT_DIR)/ARCMockTests/Libraries/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
