@@ -30,3 +30,4 @@ reference is nilled, since the object is not deallocated.
 ## Links
 
 [Stack Overflow question](http://stackoverflow.com/questions/8675054/why-is-my-objects-weak-delegate-property-nil-in-my-unit-tests)
+[Blog post](http://blog.adamstegman.com/nil-weak-reference-to-an-ocmock-mock-object.html)
