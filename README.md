@@ -15,13 +15,13 @@ Basically, given a delegate protocol and a class that uses a delegate:
 Assigning a mock to that delegate property will see the mock immediately
 nilled, even though it's held elsewhere with a strong reference.
 
-   - (void)testSomeMethod {
-     SomeClass *object = [[SomeClass alloc] init];
-     id delegate = [OCMockObject mockForProtocol:@protocol(SomeDelegateProtocol)];
-     object.delegate = delegate;
-     STAssertNotNil(delegate, @"should have created delegate");
-     STAssertNotNil(object.delegate, @"should have assigned delegate");
-   }
+    - (void)testSomeMethod {
+      SomeClass *object = [[SomeClass alloc] init];
+      id delegate = [OCMockObject mockForProtocol:@protocol(SomeDelegateProtocol)];
+      object.delegate = delegate;
+      STAssertNotNil(delegate, @"should have created delegate");
+      STAssertNotNil(object.delegate, @"should have assigned delegate");
+    }
 
 The first assertion is there to illustrate that the actual object is not
 deallocated, just the weak reference is lost. I don't understand why the
