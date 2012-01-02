@@ -17,6 +17,7 @@
   AMTester *tester = [[AMTester alloc] init];
   id delegate = [OCMockObject mockForProtocol:@protocol(AMDelegateProtocol)];
   tester.delegate = delegate;
+  STAssertNotNil(delegate, @"should have created delegate");
   STAssertNotNil(tester.delegate, @"should have assigned delegate");
 }
 
