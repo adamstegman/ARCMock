@@ -1,8 +1,10 @@
 # ARCMock
 
-OCMock has an issue with weak references under ARC, probably most commonly seen
-in the delegation pattern. This project includes an XCode project that can be
-built and tested to demonstrate the issue.
+iOS has an issue with NSProxy objects under ARC, probably most commonly seen
+when mocking delegates with [OCMock][ocmock]. This project includes an XCode
+project that can be built and tested to demonstrate the issue.
+
+[ocmock]: http://ocmock.org/
 
 ## The Issue
 
